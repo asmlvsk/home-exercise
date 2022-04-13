@@ -6,7 +6,7 @@ function Table() {
   let [state, setState] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost/getEmployees')
+    fetch('http://localhost:3001/getEmployees')
       .then(res => res.json())
       .then(val => setState(val));
   }, []);
