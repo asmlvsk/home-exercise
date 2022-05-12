@@ -1,34 +1,39 @@
 const express = require('express')
 const app = express()
 const fs = require('fs');
+const port = 8080;
 
 app.get('/', function (req, res) {
   res.send('hello world')
 })
 
-app.get('/getEmployees', (req, res) => {
-  fs.readFile('../db/employees-db.json', 'utf8', (err, data) => {
-    fs.readFile('../db/contracts-db.json', 'utf8', (err, contractsData) => {
-
-      const employees = JSON.parse(data);
-      const contracts = JSON.parse(contractsData);
-
-      for(let i = 0; i < employees.length; i++) {
-        contracts.map((contract) => {
-          if(employees[i].id === contract.employeeId) {
-            employees[i].salary  = contract.salary;
-            employees[i].salaryCurrency  = contract.salaryCurrency;
-            employees[i].contractValidUntil  = contract.contractValidUntil;
-          }
-        })
-      }
-
-      res.send(employees)
-    })
+app.get('/employees/', (req, res) => {
+  fs.readFile('../db/employees-db.json', 'utf8', (err, employees) => {
+     res.send(employees)
   })
 })
 
-app.listen(3000, () => {
-  console.log("Server ready on: localhost:3000");
+app.get('/employees/:id', (req, res) => {
+  fs.readFile('../db/employees-db.json', 'utf8', (err, employees) => {
+    const allEmployees = JSON.parse(employees)
+    res.send(allEmployees.find((employee) => employee.id.toString() === req.params.id.toString()))
+  })
+})
+
+app.get('/contracts', (req, res) => {
+  fs.readFile('../db/contracts-db.json', 'utf8', (err, contracts) => {
+      res.send(contracts)
+  })
+})
+
+app.get('/contracts/:id', (req, res) => {
+  fs.readFile('../db/contracts-db.json', 'utf8', (err, contracts) => {
+    const allContracts = JSON.parse(contracts)
+    res.send(allContracts.find((contract) => contract.id.toString() === req.params.id.toString()))
+  })
+})
+
+app.listen(port, () => {
+  console.log(`Server ready on: localhost:${port}`);
 });
 

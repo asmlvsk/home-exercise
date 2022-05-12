@@ -34,5 +34,60 @@
     "salary": 2000,
     "salaryCurrency": "EUR",
     "contractValidUntil": 1685491200000
+  },
+  {
+    "id": 5,
+    "employeeId": 5,
+    "dateOfBirth": 1044057600000,
+    "salary": 2000,
+    "salaryCurrency": "EUR",
+    "contractValidUntil": 1685491200000
+  },
+  {
+    "id": 6,
+    "employeeId": 6,
+    "dateOfBirth": 1044057600000,
+    "salary": 2000,
+    "salaryCurrency": "EUR",
+    "contractValidUntil": 1685491200000
+  },
+  {
+    "id": 7,
+    "employeeId": 7,
+    "dateOfBirth": 1044057600000,
+    "salary": 2000,
+    "salaryCurrency": "EUR",
+    "contractValidUntil": 1685491100000
+  },
+  {
+    "id": 8,
+    "employeeId": 8,
+    "dateOfBirth": 1044057600000,
+    "salary": 4000,
+    "salaryCurrency": "EUR",
+    "contractValidUntil": 1685491200000
+  },
+  {
+    "id": 9,
+    "employeeId": 9,
+    "dateOfBirth": 1044057600000,
+    "salaryCurrency": "PLN",
+    "contractValidUntil": 1685492200000
+  },
+  {
+    "id": 10,
+    "employeeId": 10,
+    "dateOfBirth": 1044057600000,
+    "salary": 2000,
+    "salaryCurrency": "EUR",
+    "contractValidUntil": 1685441200000
+  },
+  {
+    "id": 11,
+    "employeeId": 11,
+    "dateOfBirth": 1044057600000,
+    "salary": 3000,
+    "salaryCurrency": "EUR",
+    "contractValidUntil": 1685491200000
   }
 ]
