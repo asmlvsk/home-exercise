@@ -64,4 +64,4 @@ Na co zwracamy uwagę:
  
 ----
 
-Gotową aplikacje spakuj do archiwum (.zip) i prześlij do osoby, z którą jesteś w kontakcie :) 
+Gotową aplikacje spakuj do archiwum (.zip) i prześlij do martyna.iwat@senti1.com :) 
