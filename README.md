@@ -62,3 +62,6 @@ Na co zwracamy uwagę:
 3. BEM w stylowaniu.
 4. Optymalne przetwarzanie danych.
  
+----
+
+Gotową aplikacje spakuj do archiwum (.zip) i prześlij do osoby, z którą jesteś w kontakcie :) 
