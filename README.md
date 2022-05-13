@@ -37,7 +37,7 @@ Potrzebne endpointy
 ![img](./assets/employee_details.png)
 
 
-4. Sformatuj daty tak, aby wygodnie moża było je czytać.
+4. Sformatuj daty tak, aby wygodnie można było je czytać.
 
 
 5. Zadbaj o to, aby na czas ładowania danych pokazał się spinner
@@ -58,7 +58,7 @@ Dodatkowy filmik z działania aplikacji:
 
 Na co zwracamy uwagę:
 1. Czysty kod, uporządkowana struktura.
-2. Czy napisany kod da się łatwo reużyć w innym miejscu. 
+2. Reużywalność kodu. 
 3. BEM w stylowaniu.
 4. Optymalne przetwarzanie danych.
  
