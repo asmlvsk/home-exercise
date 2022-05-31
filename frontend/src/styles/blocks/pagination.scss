@@ -1,0 +1,15 @@
+.pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: '4rem';
+}
+  
+.pagination a {
+    cursor: pointer;
+    font-weight:bold;
+    font-size:15px;
+    color: black;
+    float: left;
+    padding: 8px 16px;
+}
